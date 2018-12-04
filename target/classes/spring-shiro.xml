@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-4.2.xsd">
+
+    <!-- Shiro的注解配置放在spring-mvc中 -->
+
+    <!-- web.xml中shiro的filter对应的bean -->
+    <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
+        <!-- 管理器，必须设置 -->
+        <property name="securityManager" ref="securityManager" />
+        <!-- 拦截到，跳转到的地址,通过此地址去认证 -->
+        <property name="loginUrl" value="/login" />
+        <!-- 认证成功统一跳转到/admin/index.do，建议不配置，shiro认证成功自动到上一个请求路径 -->
+        <property name="successUrl" value="/admin/index.do" />
+        <!-- 通过unauthorizedUrl指定没有权限操作时跳转页面 -->
+        <property name="unauthorizedUrl" value="/refuse.jsp" />
+        <!-- 自定义filter，可用来更改默认的表单名称配置 -->
+        <property name="filters">
+            <map>
+                <entry key="authc">
+                    <bean class="com.zuoyue.weiyang.shiro.CustomAuthenticationFilter" />
+                </entry>
+                <entry key="logout">
+                    <bean class="com.zuoyue.weiyang.shiro.CustomLogoutFilter" />
+                </entry>
+                <entry key="jwt">
+                    <bean class="com.zuoyue.weiyang.shiro.JwtFilter" />
+                </entry>
+            </map>
+        </property>
+        <property name="filterChainDefinitions">
+            <value>
+                <!-- anon表示此地址不需要任何权限即可访问 -->
+                /auth/login = jwt
+                /css/** = anon
+                /js/** = anon
+                /img/** = anon
+                /api/unit/area/list = anon
+                /api/user/pubkey = anon
+                /api/user/register = anon
+                /api/user/login = anon
+                /api/user/logout = logout
+                <!--/api/** = authc-->
+                /explain/** = anon
+                /register = anon
+                /login = anon
+                /logout = logout
+                <!--/** = authc-->
+                <!--/** = anon-->
+                /** = jwt
+            </value>
+        </property>
+    </bean>
+
+    <!-- securityManager安全管理器 -->
+    <bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
+        <property name="realm" ref="customRealm" />
+        <!-- 注入缓存管理器 -->
+        <!--<property name="cacheManager" ref="cacheManager" />-->
+        <!-- 注入session管理器 -->
+         <property name="sessionManager" ref="sessionManager" />
+        <!-- 记住我 -->
+        <!--<property name="rememberMeManager" ref="rememberMeManager" />-->
+        <property name="subjectFactory" ref="subjectFactory" />
+        <property name="subjectDAO.sessionStorageEvaluator.sessionStorageEnabled" value="false"/>
+    </bean>
+
+    <!-- 自定义realm -->
+    <bean id="customRealm" class="com.zuoyue.weiyang.shiro.JwtRealm">
+        <!-- 将凭证匹配器设置到realm中，realm按照凭证匹配器的要求进行散列 -->
+        <!--<property name="credentialsMatcher" ref="credentialsMatcher" />-->
+        <property name="cachingEnabled" value="false" />
+    </bean>
+
+    <!-- 凭证匹配器 -->
+    <bean id="credentialsMatcher"
+          class="org.apache.shiro.authc.credential.HashedCredentialsMatcher">
+        <!-- 选用MD5散列算法 -->
+        <property name="hashAlgorithmName" value="md5" />
+        <!-- 进行一次加密 -->
+        <property name="hashIterations" value="3" />
+    </bean>
+
+    <!-- 会话管理器 -->
+    <bean id="sessionManager"
+          class="org.apache.shiro.web.session.mgt.DefaultWebSessionManager">
+        <!--&lt;!&ndash; session的失效时长，单位毫秒 &ndash;&gt;-->
+        <!--<property name="globalSessionTimeout" value="600000" />-->
+        <!--&lt;!&ndash; 删除失效的session &ndash;&gt;-->
+        <!--<property name="deleteInvalidSessions" value="true" />-->
+        <property name="sessionValidationSchedulerEnabled" value="false" />
+    </bean>
+    <!-- 缓存管理器 -->
+    <bean id="cacheManager" class="org.apache.shiro.cache.ehcache.EhCacheManager">
+        <property name="cacheManagerConfigFile" value="classpath:shiro-ehcache.xml" />
+    </bean>
+    <!-- rememberMeManager管理器，写cookie，取出cookie生成用户信息 -->
+    <bean id="rememberMeManager" class="org.apache.shiro.web.mgt.CookieRememberMeManager">
+        <property name="cookie" ref="rememberMeCookie" />
+    </bean>
+    <!-- 记住我cookie -->
+    <bean id="rememberMeCookie" class="org.apache.shiro.web.servlet.SimpleCookie">
+        <!-- rememberMe是cookie的名字 -->
+        <constructor-arg value="rememberMe" />
+        <!-- 记住我cookie生效时间30天 -->
+        <property name="maxAge" value="2592000" />
+    </bean>
+
+    <bean id="subjectFactory" class="com.zuoyue.weiyang.shiro.AgileSubjectFactory">
+
+    </bean>
+</beans>

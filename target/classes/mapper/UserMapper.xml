@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zuoyue.weiyang.dao.UserDao">
+
+    <resultMap id="baseResultMap" type="com.zuoyue.weiyang.bean.User">
+        <id property="id" column="id" />
+        <result property="username" column="username" />
+        <result property="status" column="status" />
+        <result property="studentId" column="studentid" />
+        <result property="sex" column="sex" />
+        <result property="school" column="school" />
+        <result property="systemType" column="systemtype" />
+        <result property="classes" column="classes" />
+        <result property="password" column="password" />
+    </resultMap>
+
+    <insert id="insert" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO user(username,password,status,studentid,sex,school,systemtype,classes) VALUES
+        <foreach collection ="array" item="item" separator =",">
+            (#{item.username},#{item.password},#{item.status},#{item.studentId},#{item.sex},#{item.school},#{item.systemType},#{item.classes})
+        </foreach >
+    </insert>
+
+    <select id="list" resultType="com.zuoyue.weiyang.bean.User">
+        SELECT * FROM user
+    </select>
+
+    <select id="selectById" resultType="com.zuoyue.weiyang.bean.User">
+        SELECT * FROM user WHERE id=#{id}
+    </select>
+
+    <select id="selectByUname" resultType="com.zuoyue.weiyang.bean.User">
+        SELECT * FROM user WHERE studentid=#{studentId}
+    </select>
+
+    <select id="selectByUsername" resultType="com.zuoyue.weiyang.bean.User">
+        SELECT * FROM user WHERE username=#{username}
+    </select>
+
+    <update id="updateByIds">
+        UPDATE user
+        <set>
+            <if test="param.username != null">username=#{param.username},</if>
+            <if test="param.password != null">password=#{param.password},</if>
+            <if test="param.status != null">status=#{param.status},</if>
+            <if test="param.studentId != null">studentid=#{param.studentId},</if>
+            <if test="param.sex != null">sex=#{param.sex},</if>
+            <if test="param.school != null">school=#{param.school},</if>
+            <if test="param.systemtype != null">systemType=#{param.systemType},</if>
+            <if test="param.classes != null">classes=#{param.classes},</if>
+        </set>
+        WHERE id IN
+        <foreach collection ="ids" item="item" open="(" separator ="," close=")">
+            #{item}
+        </foreach >
+    </update>
+
+    <delete id="deleteByIds">
+        DELETE FROM user WHERE id IN
+        <foreach collection ="array" item="item" open="(" separator ="," close=")">
+            #{item}
+        </foreach >
+    </delete>
+</mapper>

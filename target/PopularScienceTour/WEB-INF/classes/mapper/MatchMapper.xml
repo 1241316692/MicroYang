@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zuoyue.weiyang.dao.MatchDao">
+
+    <resultMap id="baseResultMap" type="com.zuoyue.weiyang.bean.Match">
+        <id property="id" column="id" />
+        <result property="userId" column="user_id" />
+        <result property="theme" column="theme" />
+        <result property="content" column="content" />
+        <result property="organizer" column="organizer" />
+    </resultMap>
+
+    <insert id="insert" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO matchs(user_id,theme,content,organizer) VALUES
+        <foreach collection ="array" item="item" separator =",">
+            (#{item.userId},#{item.theme},#{item.content},#{item.organizer})
+        </foreach >
+    </insert>
+
+    <select id="list" resultType="com.zuoyue.weiyang.bean.Match">
+        SELECT * FROM matchs
+    </select>
+
+    <select id="selectById" resultType="com.zuoyue.weiyang.bean.Match">
+        SELECT * FROM matchs WHERE id=#{id}
+    </select>
+
+    <update id="updateByIds">
+        UPDATE matchs
+        <set>
+            <if test="param.userId != null">user_id=#{param.userId},</if>
+            <if test="param.theme != null">theme=#{param.theme},</if>
+            <if test="param.content != null">content=#{param.content},</if>
+            <if test="param.organizer != null">organizer=#{param.organizer},</if>
+        </set>
+        WHERE id IN
+        <foreach collection ="ids" item="item" open="(" separator ="," close=")">
+            #{item}
+        </foreach >
+    </update>
+
+    <delete id="deleteByIds">
+        DELETE FROM matchs WHERE id IN
+        <foreach collection ="array" item="item" open="(" separator ="," close=")">
+            #{item}
+        </foreach >
+    </delete>
+</mapper>

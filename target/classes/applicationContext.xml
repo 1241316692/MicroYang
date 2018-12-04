@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:task="http://www.springframework.org/schema/task"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task.xsd">
+
+    <context:annotation-config/>
+    <!-- 配置component所在的包，自动加载需要管理的Bean -->
+    <context:component-scan base-package="com.zuoyue.weiyang.service,com.zuoyue.weiyang.dao"/>
+    <import resource="spring-mybatis.xml" />
+    <import resource="spring-shiro.xml" />
+
+    <context:component-scan base-package="com.zuoyue.weiyang.common,com.zuoyue.weiyang.util" />
+    <!-- task任务扫描注解 -->
+    <task:annotation-driven />
+    <!-- 扫描任务 -->
+    <context:component-scan base-package="com.zuoyue.weiyang.task" />
+
+    <beans profile="test">
+        <context:property-placeholder location="classpath:jdbc-test.properties" ignore-unresolvable="true" />
+        <context:property-placeholder location="classpath:param-test.properties" ignore-unresolvable="true" />
+    </beans>
+    <beans profile="dev">
+        <context:property-placeholder location="classpath*:jdbc-dev.properties" ignore-unresolvable="true" />
+        <context:property-placeholder location="classpath:param-dev.properties" ignore-unresolvable="true" />
+    </beans>
+    <beans profile="product">
+        <context:property-placeholder location="classpath*:jdbc-product.properties" ignore-unresolvable="true" />
+        <context:property-placeholder location="classpath:param-product.properties" ignore-unresolvable="true" />
+    </beans>
+</beans>

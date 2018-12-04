@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<div class="main-div">
+    <h3>用户登录</h3>
+    <table class="table-list">
+        <tr>
+            <td class="span1">用户名</td>
+            <td><input id="uname-input" class="input-text" type="text" name="uname"></td>
+        </tr>
+        <tr>
+            <td>密码</td>
+            <td>
+                <input id="pwd-input" class="input-text" type="password" name="password">
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <a class="btn-input btn-select" onclick="getPubKey()" style="margin-left: 0;">登录</a>
+                <a class="btn-input btn-cancel" onclick="history.go(-1);">返回</a>
+            </td>
+        </tr>
+    </table>
+</div>
+<script src="/js/jsencrypt.min.js"></script>
+<script type="text/javascript">
+
+    function getPubKey() {
+        $.ajax({
+            url: "/api/user/pubkey",
+            type: "post",
+            // data: urlEncode(getPartJson(item)),
+            dataType: "json",
+            cache: false,
+            beforeSend: function () {
+            },
+            complete: function () {
+            },
+            success: function (result) {
+                if (result.code == 200) {
+                    var encrypt = new JSEncrypt();
+                    encrypt.setPublicKey(result.data);
+                    var encryptPwd = encrypt.encrypt($("#pwd-input").val());
+                    login(encryptPwd);
+                } else {
+                    alert(result.msg);
+                }
+
+            }, error: function (result) {
+                alert("网络连接失败");
+            }
+        });
+    }
+
+    function login(encryptPwd) {
+        $.ajax({
+            url: "/api/user/login",
+            type: "post",
+            data: "uname=" + $("#uname-input").val() + "&password=" + encodeURI(encryptPwd).replace(/\+/g, '%2B'),
+            dataType: "json",
+            cache: false,
+            beforeSend: function () {
+            },
+            complete: function () {
+            },
+            success: function (result) {
+                if (result.code == 200) {
+                    var backUrl = getQueryVariable("back_url");
+                    window.location.href = backUrl ? backUrl : "/";
+                } else {
+                    alert(result.msg);
+                }
+            }, error: function (result) {
+                alert("网络连接失败");
+            }
+        });
+    }
+</script>
