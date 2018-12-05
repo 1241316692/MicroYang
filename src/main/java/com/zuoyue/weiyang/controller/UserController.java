@@ -1,9 +1,7 @@
 package com.zuoyue.weiyang.controller;
 
 import com.github.pagehelper.PageHelper;
-import com.zuoyue.weiyang.bean.MyPageInfo;
-import com.zuoyue.weiyang.bean.PageParam;
-import com.zuoyue.weiyang.bean.User;
+import com.zuoyue.weiyang.bean.*;
 import com.zuoyue.weiyang.common.Constant;
 import com.zuoyue.weiyang.enums.RoleType;
 import com.zuoyue.weiyang.enums.Roles;
@@ -30,6 +28,7 @@ import javax.servlet.http.HttpSession;
 import java.security.KeyPair;
 import java.security.PrivateKey;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.Map;
 
 @RestController
@@ -127,11 +126,8 @@ public class UserController extends BaseApiController {
             }
         }
 
-
         return onBadResp("账号或密码错误");
     }
-
-
 
 
 //    @GetMapping("/login")

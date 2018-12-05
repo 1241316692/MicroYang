@@ -2,11 +2,19 @@ package com.zuoyue.weiyang.interceptor;
 
 import com.zuoyue.weiyang.annotation.CustomRoles;
 import com.zuoyue.weiyang.annotation.IsLogin;
+import com.zuoyue.weiyang.bean.Login;
 import com.zuoyue.weiyang.bean.RedisLogin;
+import com.zuoyue.weiyang.bean.User;
+import com.zuoyue.weiyang.common.Constant;
+import com.zuoyue.weiyang.controller.UserController;
 import com.zuoyue.weiyang.enums.LoginResponseCode;
+import com.zuoyue.weiyang.shiro.JwtPlayload;
+import com.zuoyue.weiyang.util.JWT;
 import com.zuoyue.weiyang.util.JedisUtils;
 import com.zuoyue.weiyang.util.ResponseVO;
 import com.google.gson.Gson;
+import io.jsonwebtoken.Claims;
+import io.jsonwebtoken.Jwts;
 import org.apache.commons.lang3.StringUtils;
 import org.json.JSONObject;
 import org.springframework.messaging.handler.HandlerMethod;
@@ -21,36 +29,36 @@ public class LoginInterceptor implements HandlerInterceptor {
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
-        System.out.println("LoginInterceptor: ");
-        System.out.println("handler: " + handler);
-//        if (handler instanceof HandlerMethod) {
-//            permission = ((HandlerMethod) handler).getMethodAnnotation(Permission.class);
-//        } else {
-//            return true;
-//        }
+//        System.out.println("LoginInterceptor: ");
+//        System.out.println("handler: " + handler);
         if (handler instanceof HandlerMethod) {
             if (((HandlerMethod) handler).getMethodAnnotation(CustomRoles.class) != null) {
                 request.getRequestDispatcher("/api/authc/unauthc").forward(request, response);
             }
         }
-        if (true) return false;
-
         PrintWriter writer = null;
-        HandlerMethod method = null;
-        try {
-            method = (HandlerMethod) handler;
-        } catch (Exception e) {
-            writer = response.getWriter();
-            ResponseVO responseVO = ResponseVO.exception();
-            resopnseMessage(response, writer, responseVO);
-            return false;
-        }
-        IsLogin isLogin = method.getMethodAnnotation(IsLogin.class);
-        if (isLogin == null) return false;
 
         response.setCharacterEncoding("utf-8");
         String token = request.getHeader("token");
-        String uid = request.getHeader("uid");
+        String uid = request.getHeader("id");
+//        System.out.print("uid=\n"+uid);
+        try{
+            final Claims claims = Jwts.parser().setSigningKey(Constant.JWT_SECRET)
+                    .parseClaimsJws(token).getBody();
+//            System.out.print("jti="+claims.get("jti"));
+            System.out.print("token验证成功");
+            String ids= (String) claims.get("jti");
+            if (ids.equals(uid)){
+                System.out.print("id验证成功\n");
+            }else {
+                System.out.print("id验证失败\n");
+                return false;
+            }
+//            System.out.print(claims.toString());
+        }catch (Exception e){
+            System.out.print("jwt验证失败\n"); return false;
+        }
+
         // token不存在
         if (StringUtils.isEmpty(token)) {
             writer = response.getWriter();
@@ -59,32 +67,34 @@ public class LoginInterceptor implements HandlerInterceptor {
             return false;
         }
 
-        // 验证登录时间
         RedisLogin redisLogin = new Gson().fromJson(JedisUtils.getJedis().get(uid), RedisLogin.class);
         if (null == redisLogin) {
-            writer = response.getWriter();
+//            writer = response.getWriter();
             ResponseVO responseVO = LoginResponseCode.builEnumResponseVO(LoginResponseCode.PESPONSE_CODE_UNLOGIN_ERROR, false);
             resopnseMessage(response, writer, responseVO);
-            return false;
+//            return false;
         }
 
-        if (!StringUtils.equals(token, redisLogin.getToken())) {
-            writer = response.getWriter();
-            ResponseVO responseVO = LoginResponseCode.builEnumResponseVO(LoginResponseCode.USERID_NOT_UNAUTHORIZED, false);
-            resopnseMessage(response, writer, responseVO);
-            return false;
-        }
-        // 系统时间>有效时间（说明已经超过有效期）
-        if (System.currentTimeMillis() > redisLogin.getRefTime()) {
-            writer = response.getWriter();
-            ResponseVO responseVO = LoginResponseCode.builEnumResponseVO(LoginResponseCode.LOGIN_TIME_EXP, false);
-            resopnseMessage(response, writer, responseVO);
-            return false;
-        }
+//        if (!StringUtils.equals(token, redisLogin.getToken())) {
+//            writer = response.getWriter();
+//            ResponseVO responseVO = LoginResponseCode.builEnumResponseVO(LoginResponseCode.USERID_NOT_UNAUTHORIZED, false);
+//            resopnseMessage(response, writer, responseVO);
+//            return false;
+//        }
+//
+//        // 系统时间>有效时间（说明已经超过有效期）
+//        if (System.currentTimeMillis() > redisLogin.getRefTime()) {
+//            writer = response.getWriter();
+//            ResponseVO responseVO = LoginResponseCode.builEnumResponseVO(LoginResponseCode.LOGIN_TIME_EXP, false);
+//            resopnseMessage(response, writer, responseVO);
+//            return false;
+//        }
+//
+////        验证登录时间
+//        redisLogin = new RedisLogin(Long.parseLong(uid), token, System.currentTimeMillis() + 60L * 1000L * 30L);
+//        JedisUtils.getJedis().set(uid, new Gson().toJson(redisLogin));
 
-        // 重新刷新有效期
-        redisLogin = new RedisLogin(uid, token, System.currentTimeMillis() + 60L * 1000L * 30L);
-        JedisUtils.getJedis().set(uid, new Gson().toJson(redisLogin));
+
         return true;
     }
 

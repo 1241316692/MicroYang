@@ -1,8 +1,11 @@
 package com.zuoyue.weiyang.bean;
 
-public class RedisLogin {
 
-    private String uid;
+import java.io.Serializable;
+
+public class RedisLogin implements Serializable {
+
+    private Long id;
     private String token;
     private long refTime;
 
@@ -10,18 +13,18 @@ public class RedisLogin {
 
     }
 
-    public RedisLogin(String uid, String token, long refTime) {
-        this.uid = uid;
+    public RedisLogin(Long id, String token, long refTime) {
+        this.id = id;
         this.token = token;
         this.refTime = refTime;
     }
 
-    public String getUid() {
-        return uid;
+    public Long getId() {
+        return id;
     }
 
-    public void setUid(String uid) {
-        this.uid = uid;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getToken() {
