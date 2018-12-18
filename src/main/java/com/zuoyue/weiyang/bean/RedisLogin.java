@@ -5,6 +5,7 @@ import java.io.Serializable;
 
 public class RedisLogin implements Serializable {
 
+    private static final long serialVersionUID = 8116817810829835862L;
     private Long id;
     private String token;
     private long refTime;

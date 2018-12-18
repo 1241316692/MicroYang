@@ -15,6 +15,8 @@ public interface UserDao {
 
     User selectById(Long id);
 
+    User selectByIdMb(Long user_id);
+
     User selectByUname(Long studentId);
 
     User selectByUsername(String username);

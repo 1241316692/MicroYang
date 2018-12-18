@@ -19,7 +19,6 @@ public class JedisUtils {
         config.setMaxIdle(10);
         // 2、设置连接池对象
         POOL = new JedisPool(config, "127.0.0.1", 6379);
-//        6379
     }
 
     public static Jedis getJedis() {

@@ -1,18 +1,9 @@
 package com.zuoyue.weiyang.interceptor;
 
 import com.zuoyue.weiyang.annotation.CustomRoles;
-import com.zuoyue.weiyang.annotation.IsLogin;
-import com.zuoyue.weiyang.bean.Login;
-import com.zuoyue.weiyang.bean.RedisLogin;
-import com.zuoyue.weiyang.bean.User;
 import com.zuoyue.weiyang.common.Constant;
-import com.zuoyue.weiyang.controller.UserController;
 import com.zuoyue.weiyang.enums.LoginResponseCode;
-import com.zuoyue.weiyang.shiro.JwtPlayload;
-import com.zuoyue.weiyang.util.JWT;
-import com.zuoyue.weiyang.util.JedisUtils;
 import com.zuoyue.weiyang.util.ResponseVO;
-import com.google.gson.Gson;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import org.apache.commons.lang3.StringUtils;
@@ -41,12 +32,13 @@ public class LoginInterceptor implements HandlerInterceptor {
         response.setCharacterEncoding("utf-8");
         String token = request.getHeader("token");
         String uid = request.getHeader("id");
+        String id = request.getHeader("id");
 //        System.out.print("uid=\n"+uid);
         try{
             final Claims claims = Jwts.parser().setSigningKey(Constant.JWT_SECRET)
                     .parseClaimsJws(token).getBody();
 //            System.out.print("jti="+claims.get("jti"));
-            System.out.print("token验证成功");
+            System.out.print("token验证成功\n");
             String ids= (String) claims.get("jti");
             if (ids.equals(uid)){
                 System.out.print("id验证成功\n");
@@ -56,7 +48,7 @@ public class LoginInterceptor implements HandlerInterceptor {
             }
 //            System.out.print(claims.toString());
         }catch (Exception e){
-            System.out.print("jwt验证失败\n"); return false;
+            System.out.print("token 验证失败\n"); return false;
         }
 
         // token不存在
@@ -67,20 +59,22 @@ public class LoginInterceptor implements HandlerInterceptor {
             return false;
         }
 
-        RedisLogin redisLogin = new Gson().fromJson(JedisUtils.getJedis().get(uid), RedisLogin.class);
-        if (null == redisLogin) {
+//        RedisLogin redisLogin = new Gson().fromJson(JedisUtils.getJedis().get(id), RedisLogin.class);
+//        if (null == redisLogin) {
 //            writer = response.getWriter();
-            ResponseVO responseVO = LoginResponseCode.builEnumResponseVO(LoginResponseCode.PESPONSE_CODE_UNLOGIN_ERROR, false);
-            resopnseMessage(response, writer, responseVO);
-//            return false;
-        }
-
-//        if (!StringUtils.equals(token, redisLogin.getToken())) {
-//            writer = response.getWriter();
-//            ResponseVO responseVO = LoginResponseCode.builEnumResponseVO(LoginResponseCode.USERID_NOT_UNAUTHORIZED, false);
+//            ResponseVO responseVO = LoginResponseCode.builEnumResponseVO(LoginResponseCode.PESPONSE_CODE_UNLOGIN_ERROR, false);
+//            System.out.print("redisLogin="+redisLogin);
 //            resopnseMessage(response, writer, responseVO);
 //            return false;
 //        }
+
+//        if (!StringUtils.equals(token, redisLogin.getToken())) {
+////            writer = response.getWriter();
+////            ResponseVO responseVO = LoginResponseCode.builEnumResponseVO(LoginResponseCode.USERID_NOT_UNAUTHORIZED, false);
+////            resopnseMessage(response, writer, responseVO);
+////            System.out.print("equals(token, redisLogin.getToken())=null");
+////            return false;
+////        }
 //
 //        // 系统时间>有效时间（说明已经超过有效期）
 //        if (System.currentTimeMillis() > redisLogin.getRefTime()) {

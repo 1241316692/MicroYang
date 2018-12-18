@@ -29,6 +29,10 @@
         SELECT * FROM user WHERE id=#{id}
     </select>
 
+    <select id="selectByIdMb" resultType="com.zuoyue.weiyang.bean.User">
+        SELECT * FROM user WHERE id=#{id}
+    </select>
+
     <select id="selectByUname" resultType="com.zuoyue.weiyang.bean.User">
         SELECT * FROM user WHERE studentid=#{studentId}
     </select>

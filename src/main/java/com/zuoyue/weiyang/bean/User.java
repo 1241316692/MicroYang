@@ -3,7 +3,7 @@ package com.zuoyue.weiyang.bean;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.zuoyue.weiyang.enums.RoleType;
 
-public class User {
+public class User  {
     private Long id;
     private String username;
     private RoleType status;

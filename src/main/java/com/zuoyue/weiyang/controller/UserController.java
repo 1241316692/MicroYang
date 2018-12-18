@@ -1,13 +1,14 @@
 package com.zuoyue.weiyang.controller;
 
 import com.github.pagehelper.PageHelper;
-import com.zuoyue.weiyang.bean.*;
+import com.zuoyue.weiyang.bean.MyPageInfo;
+import com.zuoyue.weiyang.bean.PageParam;
+import com.zuoyue.weiyang.bean.User;
 import com.zuoyue.weiyang.common.Constant;
 import com.zuoyue.weiyang.enums.RoleType;
 import com.zuoyue.weiyang.enums.Roles;
 import com.zuoyue.weiyang.service.UserService;
 import com.zuoyue.weiyang.shiro.JwtFilter;
-import com.zuoyue.weiyang.shiro.ShiroUtils;
 import com.zuoyue.weiyang.util.Md5Utils;
 import com.zuoyue.weiyang.util.RsaHelper;
 import io.jsonwebtoken.Jwts;
@@ -24,11 +25,8 @@ import org.springframework.web.bind.annotation.*;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 import java.security.KeyPair;
-import java.security.PrivateKey;
 import java.util.Date;
-import java.util.HashMap;
 import java.util.Map;
 
 @RestController
@@ -96,6 +94,7 @@ public class UserController extends BaseApiController {
                                      HttpServletRequest request, HttpServletResponse response)
     {
         String decryptPwd = password;
+        String jwtToken=null;
 //        try {
 //            decryptPwd = RsaHelper.decryptData(password, "utf-8", (PrivateKey) request.getSession().getAttribute(RsaHelper.PRIVATE_KEY));
 //        } catch (Exception e) {
@@ -110,7 +109,7 @@ public class UserController extends BaseApiController {
 //            if (!user.getActive()) return onBadResp("该账号尚未激活或已被冻结");
 
             if (user.getPassword().equals(Md5Utils.encrypt(username, decryptPwd))) {
-                String jwtToken = Jwts.builder().setId(String.valueOf(user.getId())).setSubject(username.trim())
+                 jwtToken = Jwts.builder().setId(String.valueOf(user.getId())).setSubject(username.trim())
                         .setExpiration(new Date(System.currentTimeMillis() + Constant.TOKEN_EXP_TIME))
                         .claim("roles", user.getStatus().getRole()).setIssuedAt(new Date())
                         .signWith(SignatureAlgorithm.HS256, Constant.JWT_SECRET).compact();
@@ -124,10 +123,26 @@ public class UserController extends BaseApiController {
                 result.put(JwtFilter.JWT_TOKEN, jwtToken);
                 return result;
             }
+//            RedisLogin redisLogin=new RedisLogin();
+//            redisLogin.setId(user.getId());
+//            redisLogin.setToken(jwtToken);
+//            redisLogin.setRefTime(154525552);
+//            SeeUserRedisTakes seeUserRedisTakes=new SeeUserRedisTakes();
+//            seeUserRedisTakes.addObj("redisLogin",String.valueOf(redisLogin.getId()),redisLogin);
         }
 
         return onBadResp("账号或密码错误");
     }
+
+//    @RequestMapping("/hello.do")
+//    public String hello(){
+//        SeeUserRedisTakes seeUserRedisTakes=new SeeUserRedisTakes();
+////        ModelAndView mv = new ModelAndView();
+//        System.out.println("hello see");
+//        seeUserRedisTakes.add("hello1","zxm");
+////        mv.setViewName("hello");
+//        return "hello";
+//    }
 
 
 //    @GetMapping("/login")
@@ -244,6 +259,10 @@ public class UserController extends BaseApiController {
     @ApiOperation(value = "注销用户", notes = "")
     public Map<String, Object> logout() {
         return onSuccessRep("已退出登录");
+    }
+
+    void ss(){
+
     }
 
 }

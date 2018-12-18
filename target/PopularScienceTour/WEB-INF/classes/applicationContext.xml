@@ -10,6 +10,10 @@
     <context:component-scan base-package="com.zuoyue.weiyang.service,com.zuoyue.weiyang.dao"/>
     <import resource="spring-mybatis.xml" />
     <import resource="spring-shiro.xml" />
+    <!--<import resource="spring-redis.xml" />-->
+
+    <context:property-placeholder location="classpath:redis.properties" ignore-unresolvable="true"/>
+
 
     <context:component-scan base-package="com.zuoyue.weiyang.common,com.zuoyue.weiyang.util" />
     <!-- task任务扫描注解 -->

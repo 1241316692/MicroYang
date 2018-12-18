@@ -5,33 +5,84 @@
       <artifact name="PopularScienceTour:war exploded" />
     </artifacts-to-build>
   </component>
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/controller/MatchController.java" line="5" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd14f3a6-0167-4f40-b998-40458a905180" name="Default Changelist" comment="初步完成框架">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/bean/Login.java" afterDir="false" />
+    <list default="true" id="eb228e92-4879-4aea-ab73-88dcb6042529" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/bean/Department.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/bean/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/bean/StudentUnion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/controller/DepartmentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/controller/MemberController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/controller/StudentUnionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/dao/DepartmentDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/dao/MemberDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/dao/StudentUnionDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/service/DepartmentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/service/MemberService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/service/StudentUnionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/service/impl/DepartmentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/service/impl/MemberServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/service/impl/StudentUnionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/util/RedisBaiseTakes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/util/SeeUserRedisTakes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/DepartmentMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/MemberMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/StudentUnionMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/redis.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/spring-redis.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/jquery.fancybox-2.1.7.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/icon_back.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/icon_back_selected.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/icon_browse.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/icon_browse_selected.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/icon_delete.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/icon_delete_selected.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/icon_dialog_cancel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/icon_download.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/icon_download_selected.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/icon_edit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/icon_edit_selected.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/icon_line.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/icon_pwd.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/icon_search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/icon_search_selected.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/icon_sure.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/icon_sure_selected.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/icon_upload.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/icon_upload_selected.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/icon_user.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d7709388-9a97-44e0-a707-e1491a8534fd.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/bean/RedisLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/bean/RedisLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/bean/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/bean/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/dao/UserDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/interceptor/LoginInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/interceptor/LoginInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/util/IdcardValidator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/util/IdcardValidatorO.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/util/JedisUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/util/JedisUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/jdbc-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jdbc-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/PopularScienceTour/WEB-INF/classes/jdbc-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/PopularScienceTour/WEB-INF/classes/jdbc-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/PopularScienceTour/WEB-INF/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/PopularScienceTour/WEB-INF/classes/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/PopularScienceTour/WEB-INF/classes/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/PopularScienceTour/WEB-INF/classes/mapper/UserMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/PopularScienceTour/WEB-INF/classes/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/PopularScienceTour/WEB-INF/classes/spring-mvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jdbc-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jdbc-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/PopularScienceTour/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/PopularScienceTour/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/UserMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring-mvc.xml" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -65,165 +116,159 @@
         <item name="weiyang@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="weiyang: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="user: table" type="98d5ac3d:MysqlImplModel$Table" />
+        <item name="department: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="weiyang@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="weiyang: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="lecture: table" type="98d5ac3d:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
   </component>
   <component name="FUSProjectUsageTrigger">
-    <session id="-128785235">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="3" />
-          <entry key="project.open.time.2" value="2" />
-          <entry key="project.open.time.6" value="1" />
-          <entry key="project.open.time.7" value="1" />
-          <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="5" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="class" value="2" />
-          <entry key="html" value="1" />
-          <entry key="java" value="162" />
-          <entry key="js" value="2" />
-          <entry key="jsp" value="3" />
-          <entry key="perform" value="3" />
-          <entry key="properties" value="17" />
-          <entry key="sql" value="1" />
-          <entry key="xml" value="57" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="CLASS" value="2" />
-          <entry key="Database Element" value="3" />
-          <entry key="HTML" value="1" />
-          <entry key="JAVA" value="162" />
-          <entry key="JSP" value="3" />
-          <entry key="JavaScript" value="2" />
-          <entry key="Properties" value="17" />
-          <entry key="Scratch" value="1" />
-          <entry key="XML" value="57" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="java" value="2201" />
-          <entry key="properties" value="7" />
-          <entry key="txt" value="20" />
-          <entry key="xml" value="264" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="2201" />
-          <entry key="PLAIN_TEXT" value="20" />
-          <entry key="Properties" value="7" />
-          <entry key="SQL" value="4" />
-          <entry key="XML" value="260" />
-        </counts>
-      </usages-collector>
-    </session>
     <session id="-2005690966">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="6" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.14" value="1" />
-          <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="35" />
+          <entry key="css" value="2" />
+          <entry key="department" value="1" />
           <entry key="html" value="2" />
-          <entry key="java" value="184" />
-          <entry key="jsp" value="1" />
-          <entry key="perform" value="1" />
-          <entry key="properties" value="2" />
-          <entry key="ts" value="1" />
-          <entry key="user" value="1" />
-          <entry key="vm" value="5" />
-          <entry key="xml" value="39" />
+          <entry key="java" value="22" />
+          <entry key="properties" value="4" />
+          <entry key="sql" value="1" />
+          <entry key="xml" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="35" />
-          <entry key="Database Element" value="2" />
+          <entry key="CSS" value="2" />
+          <entry key="Database Element" value="1" />
           <entry key="HTML" value="2" />
-          <entry key="JAVA" value="184" />
-          <entry key="JSP" value="1" />
-          <entry key="Properties" value="2" />
-          <entry key="TypeScript" value="1" />
-          <entry key="VTL" value="5" />
-          <entry key="XML" value="39" />
+          <entry key="JAVA" value="22" />
+          <entry key="Properties" value="4" />
+          <entry key="Scratch" value="1" />
+          <entry key="XML" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="7" />
-          <entry key="java" value="1165" />
-          <entry key="properties" value="1" />
-          <entry key="xml" value="200" />
+          <entry key="css" value="4" />
+          <entry key="html" value="20" />
+          <entry key="java" value="16" />
+          <entry key="txt" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="7" />
-          <entry key="JAVA" value="1165" />
-          <entry key="Properties" value="1" />
-          <entry key="XML" value="200" />
+          <entry key="CSS" value="4" />
+          <entry key="HTML" value="20" />
+          <entry key="JAVA" value="16" />
+          <entry key="PLAIN_TEXT" value="7" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FavoritesManager">
-    <favorites_list name="weiyang" />
+    <favorites_list name="PopularScienceTour" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4007">
-              <caret line="41" column="36" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="36" />
+            <state relative-caret-position="5025">
+              <caret line="228" column="37" selection-start-line="228" selection-start-column="37" selection-end-line="228" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/service/impl/UserServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="38" column="33" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
-              <folding>
-                <element signature="e#882#883#0" expanded="true" />
-                <element signature="e#939#940#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mvc.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="73" selection-start-line="73" selection-end-line="73" />
+            <state relative-caret-position="525">
+              <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/interceptor/LoginInterceptor.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="71" column="33" selection-start-line="71" selection-start-column="33" selection-end-line="71" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="525">
+              <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="675">
+              <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/css/jquery.fancybox-2.1.7.css">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/handler/RoleTypeTypeHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/swagger/SwaggerConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="575">
+              <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/enums/LoginResponseCode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/enums/Roles.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/enums/RoleType.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -233,83 +278,21 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="spring-beans.schema" />
-        <option value="Interface" />
-        <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>servlet</find>
-      <find>com.auth0</find>
-      <find>jwtPlayload</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
-    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="PUSH_TAGS">
-      <GitPushTagMode />
-    </option>
-  </component>
-  <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="fe9f5447-f49a-4973-962e-0fa0e79c57a6" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/SignMatchMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/bean/Perform.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/PerformMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/dao/PerformDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/service/PerformService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/service/impl/PerformServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/MatchMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/SignPerformMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/bean/SignPerform.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/shiro/CustomAuthenticationFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/shiro/JwtRealm.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/common/UserManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/shiro/UserRealm.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/enums/Roles.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/convert/StringToRoleType.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/util/ResponseVO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/enums/RoleType.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/handler/RoleTypeTypeHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/util/Md5Utils.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/controller/LectureController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/controller/MatchController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/controller/PerformController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/service/SignMatchService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/service/impl/SignMatchServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/dao/SignMatchDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/controller/SignMatchController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/service/SignPerformService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/service/impl/SignPerformServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/dao/SignPerformDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/controller/SignPerformController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring-mybatis.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/bean/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/enums/LoginResponseCode.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring-shiro.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/login.html" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring-mybatis-config.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/bean/Login.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/bean/RedisLogin.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/jdbc-dev.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/service/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/dao/UserDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/util/JedisUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/interceptor/LoginInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/service/impl/LectureServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/controller/DepartmentController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/main.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/test.html" />
       </list>
     </option>
   </component>
@@ -321,17 +304,10 @@
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
-    <option name="FILTER_WARNINGS" value="true" />
+    <option name="FILTER_WARNINGS" value="false" />
     <option name="FILTER_INFO" value="true" />
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
@@ -340,65 +316,68 @@
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="PopularScienceTour Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="PopularScienceTour Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-        </path>
       </expand>
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-7" />
-    <option name="width" value="979" />
-    <option name="height" value="1047" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="425" />
+    <option name="y" value="32" />
+    <option name="width" value="1336" />
+    <option name="height" value="964" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="weiyang" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PopularScienceTour" type="b2602c69:ProjectViewProjectNode" />
               <item name="weiyang" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="weiyang" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weiyang" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weiyang" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PopularScienceTour" type="b2602c69:ProjectViewProjectNode" />
               <item name="weiyang" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="weiyang" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PopularScienceTour" type="b2602c69:ProjectViewProjectNode" />
               <item name="weiyang" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="weiyang" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PopularScienceTour" type="b2602c69:ProjectViewProjectNode" />
               <item name="weiyang" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PopularScienceTour" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weiyang" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="weiyang" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="weiyang" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PopularScienceTour" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weiyang" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="weiyang" type="462c0819:PsiDirectoryNode" />
+              <item name="annotation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PopularScienceTour" type="b2602c69:ProjectViewProjectNode" />
               <item name="weiyang" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -407,7 +386,7 @@
               <item name="bean" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="weiyang" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PopularScienceTour" type="b2602c69:ProjectViewProjectNode" />
               <item name="weiyang" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -416,7 +395,7 @@
               <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="weiyang" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PopularScienceTour" type="b2602c69:ProjectViewProjectNode" />
               <item name="weiyang" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -425,7 +404,7 @@
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="weiyang" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PopularScienceTour" type="b2602c69:ProjectViewProjectNode" />
               <item name="weiyang" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -434,7 +413,7 @@
               <item name="convert" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="weiyang" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PopularScienceTour" type="b2602c69:ProjectViewProjectNode" />
               <item name="weiyang" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -443,7 +422,7 @@
               <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="weiyang" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PopularScienceTour" type="b2602c69:ProjectViewProjectNode" />
               <item name="weiyang" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -452,7 +431,7 @@
               <item name="enums" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="weiyang" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PopularScienceTour" type="b2602c69:ProjectViewProjectNode" />
               <item name="weiyang" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -461,7 +440,7 @@
               <item name="exception" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="weiyang" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PopularScienceTour" type="b2602c69:ProjectViewProjectNode" />
               <item name="weiyang" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -470,7 +449,7 @@
               <item name="filter" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="weiyang" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PopularScienceTour" type="b2602c69:ProjectViewProjectNode" />
               <item name="weiyang" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -479,7 +458,7 @@
               <item name="handler" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="weiyang" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PopularScienceTour" type="b2602c69:ProjectViewProjectNode" />
               <item name="weiyang" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -488,7 +467,7 @@
               <item name="interceptor" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="weiyang" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PopularScienceTour" type="b2602c69:ProjectViewProjectNode" />
               <item name="weiyang" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -497,7 +476,7 @@
               <item name="lucene" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="weiyang" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PopularScienceTour" type="b2602c69:ProjectViewProjectNode" />
               <item name="weiyang" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -506,7 +485,7 @@
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="weiyang" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PopularScienceTour" type="b2602c69:ProjectViewProjectNode" />
               <item name="weiyang" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -516,7 +495,7 @@
               <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="weiyang" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PopularScienceTour" type="b2602c69:ProjectViewProjectNode" />
               <item name="weiyang" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -525,7 +504,16 @@
               <item name="shiro" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="weiyang" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PopularScienceTour" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weiyang" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="weiyang" type="462c0819:PsiDirectoryNode" />
+              <item name="swagger" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PopularScienceTour" type="b2602c69:ProjectViewProjectNode" />
               <item name="weiyang" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -534,14 +522,23 @@
               <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="weiyang" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PopularScienceTour" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weiyang" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="weiyang" type="462c0819:PsiDirectoryNode" />
+              <item name="velocity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PopularScienceTour" type="b2602c69:ProjectViewProjectNode" />
               <item name="weiyang" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="weiyang" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PopularScienceTour" type="b2602c69:ProjectViewProjectNode" />
               <item name="weiyang" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -549,14 +546,30 @@
               <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="weiyang" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PopularScienceTour" type="b2602c69:ProjectViewProjectNode" />
               <item name="weiyang" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="weiyang" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PopularScienceTour" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weiyang" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PopularScienceTour" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weiyang" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PopularScienceTour" type="b2602c69:ProjectViewProjectNode" />
               <item name="weiyang" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -564,7 +577,7 @@
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="weiyang" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PopularScienceTour" type="b2602c69:ProjectViewProjectNode" />
               <item name="weiyang" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -580,33 +593,18 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543977976268" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544975741907" />
     <property name="database.console.LAST_STATE" value="true" />
-    <property name="last_opened_file_path" value="E:/ResearchManagement" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="vcs.CVS" />
-    <property name="vcs.patch.to.clipboard" value="true" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.zuoyue.weiyang.bean" />
-      <recent name="com.zuoyue.weiyang.enums" />
-      <recent name="com.zuoyue.weiyang.interceptor" />
-      <recent name="com.zuoyue.weiyang.handler" />
-      <recent name="com.zuoyue.weiyang.convert" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\weiyang\src\main\webapp\WEB-INF\view" />
-      <recent name="D:\weiyang\src\main\resources" />
-      <recent name="D:\weiyang\src\main\java\com\zuoyue\weiyang\util" />
-      <recent name="D:\weiyang\src\main\java\com\zuoyue\weiyang" />
-      <recent name="D:\project\weiyang\src\main\webapp\WEB-INF\view" />
+      <recent name="D:\weiyang\src\main\webapp" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -621,52 +619,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Unnamed">
-    <configuration name="Md5Utils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zuoyue.weiyang.util.Md5Utils" />
-      <module name="PopularScienceTour" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.zuoyue.weiyang.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RsaHelper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zuoyue.weiyang.util.RsaHelper" />
-      <module name="PopularScienceTour" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.zuoyue.weiyang.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SignMatchController.ss" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="PopularScienceTour" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.zuoyue.weiyang.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.zuoyue.weiyang.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.zuoyue.weiyang.controller.SignMatchController" />
-      <option name="METHOD_NAME" value="ss" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Tomcat Server.test.html">
     <configuration name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.0.M17" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER" value="false" />
-      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="COMMON_VM_ARGUMENTS" value="-Dspring.profiles.active=&quot;dev&quot;" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -677,7 +631,7 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="Unnamed_weiyang" />
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_PopularScienceTour_3" />
       </server-settings>
       <predefined_log_file id="Tomcat" enabled="true" />
       <predefined_log_file id="Tomcat Catalina" enabled="true" />
@@ -685,7 +639,7 @@
       <predefined_log_file id="Tomcat Host Manager" enabled="false" />
       <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="59852" />
+        <option name="DEBUG_PORT" value="51507" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -734,61 +688,27 @@
       </ConfigurationWrapper>
       <method v="2">
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="weiyang:war exploded" />
           <artifact name="PopularScienceTour:war exploded" />
         </option>
       </method>
     </configuration>
-    <configuration name="index.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 9.0.0.M17" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/index.jsp" />
+    <configuration name="test.html" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 9.0.0.M17" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/WEB-INF/view/test.html" />
       <deployment>
-        <artifact name="PopularScienceTour:war">
+        <artifact name="PopularScienceTour:war exploded">
           <settings>
             <option name="CONTEXT_PATH" value="/" />
           </settings>
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="index_jsp_weiyang" />
+        <option name="BASE_DIRECTORY_NAME" value="test_html_PopularScienceTour" />
       </server-settings>
       <predefined_log_file id="Tomcat" enabled="true" />
       <predefined_log_file id="Tomcat Catalina" enabled="true" />
       <predefined_log_file id="Tomcat Manager" enabled="false" />
       <predefined_log_file id="Tomcat Host Manager" enabled="false" />
       <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="50705" />
-      </RunnerSettings>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
         <option name="USE_ENV_VARIABLES" value="true" />
         <STARTUP>
@@ -807,97 +727,17 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="PopularScienceTour:war" />
-        </option>
-      </method>
-    </configuration>
-    <configuration name="login.html" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 9.0.0.M17" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/WEB-INF/view/login.html" />
-      <deployment>
-        <artifact name="PopularScienceTour:war">
-          <settings>
-            <option name="CONTEXT_PATH" value="/" />
-          </settings>
-        </artifact>
-      </deployment>
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="login_html_weiyang" />
-      </server-settings>
-      <predefined_log_file id="Tomcat" enabled="true" />
-      <predefined_log_file id="Tomcat Catalina" enabled="true" />
-      <predefined_log_file id="Tomcat Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="50704" />
-      </RunnerSettings>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <method v="2">
-        <option name="Make" enabled="true" />
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="PopularScienceTour:war" />
+          <artifact name="PopularScienceTour:war exploded" />
         </option>
       </method>
     </configuration>
     <list>
       <item itemvalue="Tomcat Server.Unnamed" />
-      <item itemvalue="Application.RsaHelper" />
-      <item itemvalue="Application.Md5Utils" />
-      <item itemvalue="JUnit.SignMatchController.ss" />
-      <item itemvalue="Tomcat Server.login.html" />
-      <item itemvalue="Tomcat Server.index.jsp" />
+      <item itemvalue="Tomcat Server.test.html" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Tomcat Server.index.jsp" />
-        <item itemvalue="Tomcat Server.login.html" />
-        <item itemvalue="JUnit.SignMatchController.ss" />
-        <item itemvalue="Application.Md5Utils" />
-        <item itemvalue="Application.RsaHelper" />
+        <item itemvalue="Tomcat Server.test.html" />
       </list>
     </recent_temporary>
   </component>
@@ -906,97 +746,58 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="bd14f3a6-0167-4f40-b998-40458a905180" name="Default Changelist" comment="" />
-      <created>1543199880954</created>
+      <changelist id="eb228e92-4879-4aea-ab73-88dcb6042529" name="Default Changelist" comment="" />
+      <created>1544579314095</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1543199880954</updated>
-      <workItem from="1543199886588" duration="1820000" />
-      <workItem from="1543201822831" duration="34641000" />
-      <workItem from="1543566152465" duration="212000" />
-      <workItem from="1543566378731" duration="8413000" />
-      <workItem from="1543666066982" duration="13271000" />
-      <workItem from="1543733818971" duration="29227000" />
-      <workItem from="1543857721194" duration="33502000" />
+      <updated>1544579314095</updated>
+      <workItem from="1544579315524" duration="996000" />
+      <workItem from="1544580800349" duration="917000" />
+      <workItem from="1544672984647" duration="2303000" />
+      <workItem from="1544969231281" duration="2384000" />
+      <workItem from="1545014313130" duration="17000" />
+      <workItem from="1545070197776" duration="190000" />
     </task>
-    <task id="LOCAL-00001" summary="初步完成框架">
-      <created>1543566071105</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1543566071105</updated>
-    </task>
-    <task id="LOCAL-00002" summary="初步完成框架">
-      <created>1543566103502</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1543566103502</updated>
-    </task>
-    <task id="LOCAL-00003" summary="初步完成框架">
-      <created>1543566410518</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1543566410518</updated>
-    </task>
-    <task id="LOCAL-00004" summary="初步完成框架">
-      <created>1543567372269</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1543567372269</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="SignMatchController_ss - 2018.12.03 at 00h 30m 50s.xml">
-      <configuration name="SignMatchController.ss" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SignMatchController_ss - 2018.12.03 at 00h 33m 47s.xml">
-      <configuration name="SignMatchController.ss" configurationId="JUnit" />
-    </history-entry>
-  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121086000" />
+    <option name="totallyTimeSpent" value="6807000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="425" y="32" width="1336" height="964" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14392324" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26802507" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Capture Tool" order="6" />
-      <window_info id="Learn" order="7" weight="0.32995737" />
+      <window_info id="Learn" order="7" />
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.47071582" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4295011" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4262473" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4989339" weight="0.329718" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5010661" side_tool="true" weight="0.329718" />
-      <window_info anchor="bottom" id="Messages" order="9" sideWeight="0.49925372" weight="0.30998853" />
-      <window_info anchor="bottom" id="Java Enterprise" order="10" weight="0.3298731" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Application Servers" order="13" weight="0.32936078" />
-      <window_info anchor="bottom" id="Spring" order="14" />
-      <window_info anchor="bottom" id="Database Console" order="15" weight="0.3467279" />
+      <window_info anchor="bottom" id="Application Servers" order="13" weight="0.329718" />
+      <window_info anchor="bottom" id="Database Console" order="14" weight="0.329718" />
+      <window_info anchor="bottom" id="Messages" order="15" weight="0.329718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Maven Projects" order="5" weight="0.32995737" />
-      <window_info anchor="right" id="Database" order="6" weight="0.37556562" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.3299373" />
+      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.3299373" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
@@ -1007,555 +808,246 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <ignored-roots>
-      <path value="$PROJECT_DIR$/MicroYang" />
-    </ignored-roots>
-    <MESSAGE value="初步完成框架" />
-    <option name="LAST_COMMIT_MESSAGE" value="初步完成框架" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/interceptor/LoginInterceptor.java</url>
-          <line>35</line>
-          <properties />
-          <option name="timeStamp" value="64" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/interceptor/LoginInterceptor.java</url>
-          <line>34</line>
-          <properties />
-          <option name="timeStamp" value="65" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/interceptor/LoginInterceptor.java</url>
-          <line>33</line>
-          <properties />
-          <option name="timeStamp" value="66" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/interceptor/LoginInterceptor.java</url>
-          <line>40</line>
-          <properties />
-          <option name="timeStamp" value="74" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/interceptor/LoginInterceptor.java</url>
-          <line>41</line>
-          <properties />
-          <option name="timeStamp" value="75" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/interceptor/LoginInterceptor.java</url>
-          <line>42</line>
-          <properties />
-          <option name="timeStamp" value="76" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-    <watches-manager>
-      <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
-        <watch expression="((ShiroHttpServletRequest)request).request" language="JAVA" custom="org.apache.shiro.web.servlet.ShiroHttpServletRequest" />
-      </configuration>
-    </watches-manager>
-  </component>
-  <component name="debuggerHistoryManager">
-    <expressions id="watch">
-      <expression>
-        <expression-string>((ShiroHttpServletRequest)request).request</expression-string>
-        <language-id>JAVA</language-id>
-        <custom-info>org.apache.shiro.web.servlet.ShiroHttpServletRequest</custom-info>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-    </expressions>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/bean/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1679">
-          <caret line="90" selection-start-line="90" selection-end-line="90" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#754#755#0" expanded="true" />
-            <element signature="e#783#784#0" expanded="true" />
-            <element signature="e#920#921#0" expanded="true" />
-            <element signature="e#952#953#0" expanded="true" />
-            <element signature="e#1408#1409#0" expanded="true" />
-            <element signature="e#1441#1442#0" expanded="true" />
-            <element signature="e#1793#1794#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.5.RELEASE/spring-webmvc-4.3.5.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="84" column="13" selection-start-line="84" selection-start-column="13" selection-end-line="84" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/shiro-ehcache.xml">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/144e2ee1-58c1-446f-9cd3-ec0337467fa3/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/controller/BaseApiController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="224" column="34" selection-start-line="224" selection-start-column="34" selection-end-line="224" selection-end-column="34" />
-          <folding>
-            <element signature="e#7418#7419#0" expanded="true" />
-            <element signature="e#7459#7460#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/login.vm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="96" selection-start-line="16" selection-start-column="96" selection-end-line="16" selection-end-column="96" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="452" column="24" selection-start-line="452" selection-start-column="15" selection-end-line="452" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/jsonwebtoken/jjwt/0.6.0/jjwt-0.6.0.jar!/io/jsonwebtoken/Jwts.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar!/javax/servlet/http/HttpServletRequest.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-654">
-          <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/shiro/CustomLogoutFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/shiro/CustomAuthenticationFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="29" column="51" lean-forward="true" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/util/IdcardValidatorO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/util/IdcardValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/util/RSAUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/util/RsaHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/util/ResponseVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="86" column="36" selection-start-line="86" selection-start-column="36" selection-end-line="86" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/util/PhoneNumValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/util/Md5Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#432#433#0" expanded="true" />
-            <element signature="e#504#505#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/util/MD5Util.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/util/MD5Generator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/enums/LoginResponseCode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://d7709388-9a97-44e0-a707-e1491a8534fd/schema/weiyang/table/perform">
+    <entry file="das://144e2ee1-58c1-446f-9cd3-ec0337467fa3/schema/weiyang/table/department">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.5.RELEASE/spring-webmvc-4.3.5.RELEASE.jar!/org/springframework/web/servlet/HandlerExecutionChain.class">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="83" selection-start-line="83" selection-end-line="83" />
+        <state relative-caret-position="437">
+          <caret line="19" column="63" lean-forward="true" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="63" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/annotation/IsLogin.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/service/impl/LectureServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/bean/Perform.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
+        <state>
           <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/io/Serializable.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/bean/StudentUnion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="168" column="17" selection-start-line="168" selection-start-column="17" selection-end-line="168" selection-end-column="17" />
+        <state relative-caret-position="253">
+          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/util/SerialzeUtil.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/bean/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="21" column="29" lean-forward="true" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+        <state relative-caret-position="-8">
+          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.5.RELEASE/spring-webmvc-4.3.5.RELEASE.jar!/org/springframework/web/servlet/HandlerInterceptor.class">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/DepartmentMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        <state relative-caret-position="50">
+          <caret line="2" column="49" lean-forward="true" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.0/commons-lang3-3.0.jar!/org/apache/commons/lang3/StringUtils.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/dao/DepartmentDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
+        <state relative-caret-position="325">
+          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/service/impl/DepartmentServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/shiro/UserRealm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
           <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/service/impl/PerformServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/shiro/ShiroUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-          <folding>
-            <element signature="e#1106#1107#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-306">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/bean/Login.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/shiro/JwtToken.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="805">
-          <caret line="45" column="30" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="30" />
-          <folding>
-            <element signature="e#540#541#0" expanded="true" />
-            <element signature="e#571#572#0" expanded="true" />
-            <element signature="e#619#620#0" expanded="true" />
-            <element signature="e#659#660#0" expanded="true" />
-            <element signature="e#899#900#0" expanded="true" />
-            <element signature="e#941#942#0" expanded="true" />
-            <element signature="e#975#976#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/jsonwebtoken/jjwt/0.6.0/jjwt-0.6.0.jar!/io/jsonwebtoken/Claims.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="772">
-          <caret line="43" column="11" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/common/Constant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+        <state relative-caret-position="100">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/shiro/JwtRealm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="64" column="64" selection-start-line="64" selection-start-column="64" selection-end-line="64" selection-end-column="64" />
+        <state relative-caret-position="100">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc-dev.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/shiro/JwtPlayload.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mybatis.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="44" column="11" selection-start-line="44" selection-start-column="11" selection-end-line="44" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mybatis-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="736">
-          <caret line="32" column="68" selection-start-line="32" selection-start-column="68" selection-end-line="32" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1725" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-shiro.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="71" column="59" selection-start-line="71" selection-start-column="59" selection-end-line="71" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0.jar!/redis/clients/jedis/JedisPool.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="164" column="16" selection-start-line="164" selection-start-column="11" selection-end-line="164" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/bean/RedisLogin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
-          <folding>
-            <element signature="e#398#399#0" expanded="true" />
-            <element signature="e#423#424#0" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
-            <element signature="e#485#486#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/controller/PerformController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="62" column="22" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/util/JedisUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="20" column="56" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
-          <folding>
-            <element signature="e#601#602#0" expanded="true" />
-            <element signature="e#642#643#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/util/JedisUtilT.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2530">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/util/JWT.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="709">
-          <caret line="37" column="36" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="73" selection-start-line="73" selection-end-line="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4007">
-          <caret line="41" column="36" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="38" column="33" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
-          <folding>
-            <element signature="e#882#883#0" expanded="true" />
-            <element signature="e#939#940#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="100">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/interceptor/LoginInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="71" column="33" selection-start-line="71" selection-start-column="33" selection-end-line="71" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="750">
+          <caret line="59" column="9" lean-forward="true" selection-start-line="59" selection-start-column="9" selection-end-line="59" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="42" lean-forward="true" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc-dev.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc-product.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/redis.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="22" lean-forward="true" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/shiro-ehcache.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-525">
+          <caret line="63" column="25" lean-forward="true" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/controller/DepartmentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="19" column="50" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/controller/BaseApiController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4575">
+          <caret line="219" column="52" selection-start-line="219" selection-start-column="52" selection-end-line="219" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/filter/CORSFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/bean/Lecture.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5025">
+          <caret line="228" column="37" selection-start-line="228" selection-start-column="37" selection-end-line="228" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/jquery.fancybox-2.1.7.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/handler/RoleTypeTypeHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/swagger/SwaggerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/enums/LoginResponseCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/enums/Roles.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zuoyue/weiyang/enums/RoleType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <last-edited>PopularScienceTour:war</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.5" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>Spring</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>PopularScienceTour</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Maven: antlr:antlr:2.7.2</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

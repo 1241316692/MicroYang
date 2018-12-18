@@ -62,15 +62,15 @@ http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd http://www.springfr
     <mvc:default-servlet-handler />
 
     <!--&lt;!&ndash; 配置拦截器 &ndash;&gt;-->
-    <mvc:interceptors>
-        <mvc:interceptor>
-            <mvc:mapping path="/**"/>
-            <mvc:exclude-mapping path="/api/user/login"/>
-            <mvc:exclude-mapping path="/api/user/register"/>
-            <mvc:exclude-mapping path="/swagger/**"/>
-            <bean class="com.zuoyue.weiyang.interceptor.LoginInterceptor"/>
-        </mvc:interceptor>
-    </mvc:interceptors>
+    <!--<mvc:interceptors>-->
+        <!--<mvc:interceptor>-->
+            <!--<mvc:mapping path="/**"/>-->
+            <!--<mvc:exclude-mapping path="/api/user/login"/>-->
+            <!--<mvc:exclude-mapping path="/api/user/register"/>-->
+            <!--<mvc:exclude-mapping path="/swagger/**"/>-->
+            <!--<bean class="com.zuoyue.weiyang.interceptor.LoginInterceptor"/>-->
+        <!--</mvc:interceptor>-->
+    <!--</mvc:interceptors>-->
 
 
     <!-- 视图模式配置,velocity配置文件-->

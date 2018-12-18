@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zuoyue.weiyang.dao.StudentUnionDao">
+
+    <resultMap id="baseResultMap" type="com.zuoyue.weiyang.bean.StudentUnion">
+        <id property="id" column="id" />
+        <result property="userId" column="user_id" />
+        <result property="name" column="name" />
+        <result property="sessions" column="sessions" />
+        <result property="suContent" column="sucontent" />
+        <result property="courtYardStUn" column="courtyardstun" />
+    </resultMap>
+
+    <resultMap id="listDpMap" type="com.zuoyue.weiyang.bean.StudentUnion">
+        <id property="id" column="id" />
+        <result property="userId" column="user_id" />
+        <result property="name" column="name" />
+        <result property="sessions" column="sessions" />
+        <result property="suContent" column="sucontent" />
+        <result property="courtYardStUn" column="courtyardstun" />
+        <collection property="departments" column="id" select="com.zuoyue.weiyang.dao.DepartmentDao.selectById"/>
+    </resultMap>
+
+    <insert id="insert" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO studentunion(user_id,name,sessions,sucontent,courtyardstun) VALUES
+        <foreach collection ="array" item="item" separator =",">
+            (#{item.userId},#{item.name},#{item.sessions},#{item.suContent},#{item.courtYardStUn})
+        </foreach >
+    </insert>
+
+    <select id="list" resultType="com.zuoyue.weiyang.bean.StudentUnion">
+        SELECT * FROM studentunion
+    </select>
+
+    <select id="listDp" resultMap="listDpMap">
+        SELECT * FROM studentunion
+    </select>
+
+    <select id="selectById" resultType="com.zuoyue.weiyang.bean.StudentUnion">
+        SELECT * FROM studentunion WHERE id=#{id}
+    </select>
+
+    <update id="updateByIds">
+        UPDATE studentunion
+        <set>
+            <if test="param.userId != null">user_id=#{param.userId},</if>
+            <if test="param.name != null">name=#{param.name},</if>
+            <if test="param.sessions != null">sessions=#{param.sessions},</if>
+            <if test="param.suContent != null">sucontent=#{param.suContent},</if>
+            <if test="param.courtYardStUn != null">courtyardstun=#{param.courtYardStUn},</if>
+        </set>
+        WHERE id IN
+        <foreach collection ="ids" item="item" open="(" separator ="," close=")">
+            #{item}
+        </foreach >
+    </update>
+
+    <delete id="deleteByIds">
+        DELETE FROM studentunion WHERE id IN
+        <foreach collection ="array" item="item" open="(" separator ="," close=")">
+            #{item}
+        </foreach >
+    </delete>
+</mapper>

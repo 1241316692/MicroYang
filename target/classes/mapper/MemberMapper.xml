@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zuoyue.weiyang.dao.MemberDao">
+
+    <resultMap id="baseResultMap" type="com.zuoyue.weiyang.bean.Member">
+        <id property="id" column="id" />
+        <result property="userId" column="user_id" />
+        <result property="studentUnionId" column="studentunion_id" />
+        <result property="departmentId" column="department_id" />
+    </resultMap>
+
+    <resultMap id="SelectUserMap" type="com.zuoyue.weiyang.bean.Member">
+        <id property="id" column="id" />
+        <result property="userId" column="user_id" />
+        <result property="studentUnionId" column="studentunion_id" />
+        <result property="departmentId" column="department_id" />
+        <association property="user" column="user_id" select="com.zuoyue.weiyang.dao.UserDao.selectByIdMb" />
+    </resultMap>
+
+    <insert id="insert" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO member(user_id,studentunion_id,department_id) VALUES
+        <foreach collection ="array" item="item" separator =",">
+            (#{item.userId},#{item.studentUnionId},#{item.departmentId})
+        </foreach >
+    </insert>
+
+    <select id="list" resultType="com.zuoyue.weiyang.bean.Member">
+        SELECT * FROM member
+    </select>
+
+    <select id="selectById" resultType="com.zuoyue.weiyang.bean.Member">
+        SELECT * FROM member WHERE id=#{id}
+    </select>
+
+    <select id="selectByDp" resultMap="SelectUserMap">
+        SELECT * FROM member WHERE department_id=#{department_id}
+    </select>
+
+    <update id="updateByIds">
+        UPDATE member
+        <set>
+            <if test="param.userId != null">user_id=#{param.userId},</if>
+            <if test="param.studentUnionId != null">studentunion_id=#{param.studentUnionId},</if>
+            <if test="param.departmentId != null">department_id=#{param.departmentId},</if>
+        </set>
+        WHERE id IN
+        <foreach collection ="ids" item="item" open="(" separator ="," close=")">
+            #{item}
+        </foreach >
+    </update>
+
+    <delete id="deleteByIds">
+        DELETE FROM member WHERE id IN
+        <foreach collection ="array" item="item" open="(" separator ="," close=")">
+            #{item}
+        </foreach >
+    </delete>
+</mapper>
